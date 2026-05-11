@@ -1,0 +1,35 @@
+.analytics-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.analytics-card {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.analytics-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.chart-wrapper {
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .analytics-grid {
+    grid-template-columns: 1fr;
+  }
+}

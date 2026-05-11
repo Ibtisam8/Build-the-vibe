@@ -1,0 +1,65 @@
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.stat-card {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border: 1px solid transparent;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--secondary);
+}
+
+.stat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.stat-icon {
+  padding: 10px;
+  border-radius: 12px;
+  width: 44px;
+  height: 44px;
+}
+
+.stat-icon.events { background-color: #e0f2fe; color: var(--primary); }
+.stat-icon.visitors { background-color: #ecfdf5; color: var(--secondary); }
+.stat-icon.tickets { background-color: #f7fee7; color: var(--accent); }
+.stat-icon.revenue { background-color: #fff1f2; color: var(--highlight); }
+
+.growth-tag {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 20px;
+}
+
+.growth-tag.up { background-color: #ecfdf5; color: #10b981; }
+.growth-tag.down { background-color: #fff1f2; color: #ef4444; }
+
+.stat-body h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.stat-body p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+}

@@ -1,0 +1,101 @@
+.ai-insights {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  height: fit-content;
+  position: sticky;
+  top: 90px;
+}
+
+.insights-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.sparkle-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary);
+}
+
+.sparkle-title h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.live-tag {
+  background-color: #fee2e2;
+  color: #ef4444;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.insights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.insight-item {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.insight-item:last-child {
+  border-bottom: none;
+}
+
+.insight-top {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.insight-icon {
+  padding: 6px;
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+}
+
+.insight-icon.trend { background-color: #e0f2fe; color: var(--primary); }
+.insight-icon.suggestion { background-color: #ecfdf5; color: var(--secondary); }
+.insight-icon.action { background-color: #fff1f2; color: var(--highlight); }
+
+.insight-item h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.insight-item p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.insights-footer {
+  margin-top: 1.5rem;
+}
+
+.full-report-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #f1f5f9;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: var(--transition);
+}
+
+.full-report-btn:hover {
+  background-color: #e2e8f0;
+}

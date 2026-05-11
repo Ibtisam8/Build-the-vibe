@@ -1,0 +1,91 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 70px;
+  background-color: var(--card-bg);
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-logo h1 {
+  font-size: 1.5rem;
+  color: var(--primary);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+  background-color: #f1f5f9;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  width: 400px;
+  color: var(--text-muted);
+}
+
+.navbar-search input {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: 0.5rem;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.icon-btn {
+  background: transparent;
+  color: var(--text-muted);
+  position: relative;
+  transition: var(--transition);
+}
+
+.icon-btn:hover {
+  color: var(--primary);
+}
+
+.badge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--highlight);
+  border-radius: 50%;
+  border: 2px solid var(--card-bg);
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  background-color: #e2e8f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .navbar-search {
+    display: none;
+  }
+}
